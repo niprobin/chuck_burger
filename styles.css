@@ -25,18 +25,22 @@ a, a:visited {
     align-items: center;
     background-color: #AD0614;
     color: #FFF3D7;
-    padding: 15px 20px;
+    height:15vh;
     width:100%;
     position: fixed;
     top:0;
-    font-size:1.1em;
+    font-size:1.2em;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
 }
 
-/* --- USE THIS TO STYLE THE SCROLLED NAVBAR --- 
+/* --- USE THIS TO STYLE THE SCROLLED NAVBAR --- */
 
 .scrolled {
-    background-color:#ad06142d;
-    color:#AD0614;
+    height:10vh;
+    font-size: 1em;
+    background-color: #ad0614b5;
+    backdrop-filter: blur(6px);
 }
 
 /* --- */
@@ -65,7 +69,7 @@ a, a:visited {
 
 .hero {
     width: 100%;
-    margin-top:80px;
+    margin-top:18vh;
     height: 33vh;
     display: flex;
     justify-content: center;
