@@ -100,7 +100,7 @@ header {
 
 .intro {
     width:60%;
-    margin : 0 auto;
+    margin : 20px auto;
     padding: 20px;
     text-align: center;
     font-family:'Chuck', Tahoma, Verdana, sans-serif;
@@ -110,7 +110,7 @@ header {
 .usp {
     width:80%;
     border:2px solid #AD0614;
-    margin : 0 auto;
+    margin : 20px auto;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -225,10 +225,11 @@ footer {
 
     .hero {
         width:100%;
+        height:50vh;
     }
 
     .hero > .hero-logo {
-        width: 80%;
+        width: 100%;
     }
 
     .intro {
