@@ -121,6 +121,20 @@ a, a:visited {
     font-family: 'Anton', Tahoma, Verdana, sans-serif;
 }
 
+.iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+iframe {
+    width: 500px;
+    height: 500px;
+    border: 1px solid transparent;
+    border-radius:4px;
+}
+
 /* --------------- FOOTER ------------------- */
 
 footer {
