@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gowun+Dodum&display=swap');
 
+@font-face {
+    font-family: "Chuck";
+    src: url("/waffle_soft.otf");
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -19,67 +24,78 @@ a, a:visited {
     color: inherit;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #AD0614;
-    color: #FFF3D7;
-    height:15vh;
+header {
     width:100%;
-    position: fixed;
-    top:0;
-    font-size:1.2em;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
 }
+
+/* --- NAVBAR STYLES --- */
+
+.nav {
+    width: 100%;
+    height:10vh;
+    background-color: #FFF3D7;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    top:0;
+    transition: all 0.3s ease;
+    font-family: 'Chuck', Tahoma, Verdana, sans-serif;
+  }
+  .nav > .nav-header {
+    flex: 0.95;
+    padding-left: 1rem;
+  }
+  .nav > .nav-header > .nav-title {
+    width:120px;
+    color: #AD0614;
+  }
+
+  .nav-title > a > img {
+    width:100%;
+  }
+
+  .nav > .nav-list {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav > .nav-list > li {
+    list-style-type: none;
+  }
+  .nav > .nav-list > li a {
+    text-decoration: none;
+    color: #AD0614;
+    cursor: pointer;
+  }
+
+  .nav > .nav-list > li a:hover {
+    border-bottom:1px solid #AD0614;
+  }  
+  .nav > #nav-check {
+      display: none;
+  }
 
 /* --- USE THIS TO STYLE THE SCROLLED NAVBAR --- */
 
 .scrolled {
     height:10vh;
     font-size: 1em;
-    background-color: #ad0614b5;
+    border-bottom:1px solid #ad0614b5;
     backdrop-filter: blur(6px);
 }
 
 /* --- */
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    gap:20px;
-}
-
-.navbar-logo {
-    width:150px;
-    height: auto;
-    display: none;
-}
-
-.click-collect {
-    background-color:#FFF3D7;
-    color:#AD0614;
-    border-radius:4px;
-    padding: 10px 20px;
-}
-
 .hero {
     width: 100%;
-    margin-top:18vh;
-    height: 33vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #FFF3D7;
     text-align: center;
-}
-
-.hero > .hero-logo {
-    width:540px;
+    background-image: url("/unsplashed_large_hero.jpg");
+    background-position: bottom;
+    background-size: cover;
 }
 
 .intro {
@@ -87,7 +103,8 @@ a, a:visited {
     margin : 0 auto;
     padding: 20px;
     text-align: center;
-    font-family:'Anton', Tahoma, Verdana, sans-serif;
+    font-family:'Chuck', Tahoma, Verdana, sans-serif;
+    background-color:#FFF3D7;
 }
 
 .usp {
@@ -100,6 +117,7 @@ a, a:visited {
     align-items: center;
     gap: 60px;
     padding: 20px;
+    background-color:#FFF3D7;
 }
 
 .usp-item {
@@ -118,21 +136,7 @@ a, a:visited {
 
 .usp-item > h3 {
     font-size: 1.2rem;
-    font-family: 'Anton', Tahoma, Verdana, sans-serif;
-}
-
-.iframe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
-}
-
-iframe {
-    width: 500px;
-    height: 500px;
-    border: 1px solid transparent;
-    border-radius:4px;
+    font-family: 'Chuck', Tahoma, Verdana, sans-serif;
 }
 
 /* --------------- FOOTER ------------------- */
@@ -163,6 +167,57 @@ footer {
 /* --------------- MEDIA QUERIES ------------------- */
 
 @media screen and (max-width: 768px) {
+
+/* --- NAVBAR MOBILE STYLES --- */
+
+.nav {
+    padding: 1rem;
+  }
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 0.2rem;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 3px solid #AD0614;
+  }
+  .nav > .nav-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    background-color: #FFF3D7;
+    height: 0;
+    transition: all 0.3s ease-in;
+    top: 10vh;
+    left: 0;
+    overflow: hidden;
+    padding-left:50px;
+    font-size:2em;
+    
+  }
+  .nav > .nav-list > li {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .nav > #nav-check:checked ~ .nav-list {
+    height: calc(100vh - 50px);
+  }
+
+/* --- */
+
     body {
         width:100%;
         max-width:100%;
