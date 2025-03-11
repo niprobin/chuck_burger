@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Chuck";
-    src: url("/waffle_soft.otf");
+    src: url("/assets/waffle_soft.otf");
 }
 
 * {
@@ -17,6 +17,12 @@ body {
     font-family:'Gowun Dodum', Tahoma, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body.reservation {
+    background-color: #AD0614;
+    color: #FFF3D7;
+    padding-top:40px;
 }
 
 a, a:visited {
@@ -163,6 +169,11 @@ footer {
 .footer-social {
     width: 36px;
     height: auto;
+}
+
+footer.reservation {
+    background-color: #1e1e1e;
+    color: #fff;
 }
 
 /* --------------- MEDIA QUERIES ------------------- */
