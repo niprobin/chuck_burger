@@ -52,6 +52,7 @@ header {
     top:0;
     transition: all 0.3s ease;
     font-family: 'Chuck', Tahoma, Verdana, sans-serif;
+    border-bottom:3px solid transparent;
     
   }
   .nav > .nav-header {
@@ -114,7 +115,7 @@ header {
     color: #FFF3D7;
     text-align: center;
     background-image: url("/assets/hero_2.jpg");
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
 }
 
@@ -323,6 +324,6 @@ footer.reservation {
     }
 
     .usp-item > img {
-        width: 50%;
+        width: 80%;
     }
 }
