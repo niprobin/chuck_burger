@@ -6,93 +6,96 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
+
 <body>
-<!----------------- NAVBAR ----------------->
-    <header>
-        <nav id="navbar" class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-              <div class="nav-title">
-                <a href="#"><img src="/logos/logo_chuck_3D.png" alt="Chuck"></a>
-              </div>
-            </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            </div>
-            
-            <ul class="nav-list">
-              <li><a target="_blank" href="/menu_chuck_A4.pdf">Notre carte</a></li>
-              <li><a target="_blank" href="/reservations.html">Réserver une table</a></li>
-              <li><a target="_blank" href="#">Click & Collect</a></li>
-              
-            </ul>
-          </nav>
-    </header>
-<!----------------- HERO ----------------->
-    <div class="hero">
-    </div>
-    <div class="intro">
-        <h2>Chez Chuck, nous sommes fiers de travailler chaque jour avec des produits frais, choisis avec soin pour rendre meilleur votre moment burger.</h2>
-    </div>
-<!----------------- USP ----------------->
-    <div class="usp">
-        <div class="usp-item">
-            <img src="/icons/fried-potatoes.png" alt="">
-            <h3>Frites & sauces maisons</h3>
-            <p>Préparées en double cuisson pour une frite croustillante à l’extérieur et fondante à l’intérieur.</p>
+  <!----------------- NAVBAR ----------------->
+  <header>
+    <nav id="navbar" class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="#"><img src="/logos/logo_chuck_3D_dropshadow.png" alt="Chuck"></a>
         </div>
-        <div class="usp-item">
-            <img src="/icons/cow.png" alt="">
-            <h3>Viande sourcée à la Croix-Rousse</h3>
-            <p>Nous choisissons des races réputées pour leur saveur, comme l’Aubrac et la Limousine.</p>
-        </div>
-        <div class="usp-item">
-            <img src="/icons/bun.png" alt="">
-            <h3>Pains élaborés en partenariat avec nos voisins</h3>
-            <p>Nous avons créé une recette unique avec la Fabrique de Justine, notre maître artisan boulanger.</p>
-        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <ul class="nav-list">
+        <li><a class="nav-link" target="_blank" href="/menu_chuck_A4.pdf">Notre carte</a></li>
+        <li><a class="nav-link" target="_blank" href="/reservations.html">Réserver une table</a></li>
+        <li><a class="nav-link" target="_blank" href="#">Click & Collect</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <!----------------- HERO ----------------->
+  <div class="hero">
+  </div>
+  <div class="intro">
+    <h2>Chez Chuck, nous sommes fiers de travailler chaque jour avec des produits frais, choisis avec soin pour rendre
+      meilleur votre moment burger.</h2>
+  </div>
+  <!----------------- USP ----------------->
+  <div class="usp">
+    <div class="usp-item">
+      <img src="/assets/square/chuck_burger_service_square.JPG" alt="un bon burger">
+      <div class="usp-details">
+        <h3>Frites & sauces maisons</h3>
+        <p>Préparées en double cuisson pour une frite croustillante à l’extérieur et fondante à l’intérieur.</p>
+      </div>
     </div>
-<!----------------- ZENCHEF WIDGET ----------------->
-    <script>
-        ;(function (d, s, id) {
-          const el = d.getElementsByTagName(s)[0]
-          if (d.getElementById(id) || el.parentNode == null) return
-          var js = d.createElement(s)
-          js.id = id
-          js.src = 'https://sdk.zenchef.com/v1/sdk.min.js'
-          el.parentNode.insertBefore(js, el)
-        })(document, 'script', 'zenchef-sdk')
-      </script>
-      <div class="zc-widget-config"
-         data-restaurant="373753"
-         data-open=""
-         data-lang="fr"
-         data-position="right"
-         data-primary-color="AD0614"
-         data-hide-default-button="false">
+    <div class="usp-item">
+      <img src="/assets/square/burger_cuisine_square.JPG" alt="">
+      <div class="usp-details">
+        <h3>Frites & sauces maisons</h3>
+        <p>Préparées en double cuisson pour une frite croustillante à l’extérieur et fondante à l’intérieur.</p>
+      </div>
     </div>
-<!---------------- FOOTER ---------------->
-    <footer>
-        <img class="footer-logo" src="/logos/logo_chuck_white.png" alt="">
-        <div class="footer-contact">
-            <p>24 rue de la Thibaudière, 69007 Lyon</p>
-            <p>04 78 72 46 58</p>
-        </div>
-        <a href="https://www.instagram.com/chuckburgerlyon"><img class="footer-social" src="/icons/instagram-logo-full-light.png" alt=""></a>    
-</footer>  
-<script src="/script.js" async defer></script>
+    <div class="usp-item">
+      <img src="/assets/square/burger_close_square.JPG" alt="">
+      <div class="usp-details">
+        <h3>Frites & sauces maisons</h3>
+        <p>Préparées en double cuisson pour une frite croustillante à l’extérieur et fondante à l’intérieur.</p>
+      </div>
+    </div>
+  </div>
+  <!----------------- ZENCHEF WIDGET ----------------->
+  <script>
+    ; (function (d, s, id) {
+      const el = d.getElementsByTagName(s)[0]
+      if (d.getElementById(id) || el.parentNode == null) return
+      var js = d.createElement(s)
+      js.id = id
+      js.src = 'https://sdk.zenchef.com/v1/sdk.min.js'
+      el.parentNode.insertBefore(js, el)
+    })(document, 'script', 'zenchef-sdk')
+  </script>
+  <div class="zc-widget-config" data-restaurant="373753" data-open="" data-lang="fr" data-position="right"
+    data-primary-color="AD0614" data-hide-default-button="false">
+  </div>
+  <!---------------- FOOTER ---------------->
+  <footer>
+    <img class="footer-logo" src="/logos/logo_chuck_white.png" alt="">
+    <div class="footer-contact">
+      <p>24 rue de la Thibaudière, 69007 Lyon</p>
+      <p>04 78 72 46 58</p>
+    </div>
+    <a href="https://www.instagram.com/chuckburgerlyon"><img class="footer-social"
+        src="/icons/instagram-logo-full-light.png" alt=""></a>
+  </footer>
+  <script src="/script.js" async defer></script>
 </body>
 
 </html>
