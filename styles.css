@@ -182,6 +182,7 @@ footer {
     text-align: center;
     margin-top:0px;
     gap:20px;
+    border-top:3px solid #FFF3D7;
 }
 
 .footer-logo {
@@ -207,6 +208,7 @@ footer.reservation {
 
 .nav {
     padding: 1rem;
+    background-color:#FFF3D7;
   }
   .nav > .nav-btn {
     display: inline-block;
@@ -242,8 +244,13 @@ footer.reservation {
     overflow: hidden;
     padding-left:50px;
     font-size:2em;
-    
   }
+
+  .nav > .nav-list > li a {
+    font-size: 1em;
+    box-shadow: none;
+  }
+
   .nav > .nav-list > li {
     width: 100%;
     margin-top: 1.5rem;
@@ -270,10 +277,23 @@ footer.reservation {
 
     .intro {
         width:90%;
+        height:48vh;
     }
 
     .usp {
-        width:90%;
+        width:100%;
         flex-direction: column;
+    }
+
+    .usp-item, .usp-item:nth-child(2) {
+        width:100%;
+        padding:10%;
+        flex-direction: column;
+        gap: 2em;
+        text-align:center;
+    }
+
+    .usp-item > img {
+        width: 50%;
     }
 }
