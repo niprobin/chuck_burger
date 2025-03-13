@@ -19,6 +19,12 @@ body {
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
 body.reservation {
     background-color: #AD0614;
     color: #FFF3D7;
@@ -168,6 +174,28 @@ header {
     font-family: 'Chuck', Tahoma, Verdana, sans-serif;
 }
 
+/* --------------- BOTTOM CTAS ------------------- */
+
+.bottom-actions {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+  padding:5% 10%;
+  gap:30px;
+}
+
+.bottom-actions > a {
+  font-family:'Chuck', Tahoma, Verdana, sans-serif;
+  padding: 20px 30px;
+  font-size: 1.2em;
+  background-color:#AD0614;
+  color:#FFF3D7;
+  border-radius:60px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
 
 /* --------------- FOOTER ------------------- */
 
@@ -244,6 +272,7 @@ footer.reservation {
     overflow: hidden;
     padding-left:50px;
     font-size:2em;
+    text-align:center;
   }
 
   .nav > .nav-list > li a {
