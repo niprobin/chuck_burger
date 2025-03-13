@@ -1,5 +1,5 @@
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 200) {
        $('#navbar').addClass('scrolled');
        $('.nav-link').css("border-radius", "0px").css("box-shadow", "none");
 
