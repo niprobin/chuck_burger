@@ -98,6 +98,7 @@ header {
     display: flex;
     align-items: center;
     position:fixed;
+    z-index:100;
     top:0;
     transition: all 0.3s ease;
     font-family: 'Chuck', Tahoma, Verdana, sans-serif;
@@ -189,34 +190,68 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#AD0614;
-    color:#FFF3D7
 }
 
 .usp-item {
     width: 100%;
-    padding:2% 20%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 4em;
-    text-align:left;
+    height:50vh;
 }
+
+.usp-item-split{
+  width:40%;
+  height:100%;
+  background-color: #ad0614;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.usp-item-details {
+  width:60%;
+  background-color:#FFF3D7;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding-right:10%;
+}
+
+.usp-item-details > img {
+    width: 240px;
+    height: auto;
+    border-radius:50px;
+    transform:translateX(-100px) rotate(5deg);
+    border:3px solid #171717;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* -------- USP ALTERNATE STYLE -------- */
 
 .usp-item:nth-child(2) {
-    flex-direction: row-reverse;
-    text-align:right;
-    background-color:#FFF3D7;
-    color:#AD0614;
+  flex-direction: row-reverse;
 }
 
-.usp-item > img {
-    width: 25%;
-    height: auto;
-    border-radius:300px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.usp-item:nth-child(2) > .usp-item-split {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 
+.usp-item:nth-child(2) > .usp-item-details {
+  flex-direction: row-reverse;
+  justify-content: end;
+  text-align:right;
+  padding-right:0px;
+  padding-left:10%;
+}
+
+.usp-item:nth-child(2) > .usp-item-details > img {
+  transform: translateX(100px) rotate(-5deg);
+  
 }
 
 .usp-details > h3 {
