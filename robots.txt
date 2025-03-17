@@ -1,0 +1,13 @@
+# Robots.txt file for CHUCK | SMASH BURGERS
+
+User-agent: *
+Disallow: /assets/
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /reservations.html
+
+# Allow search engines to index the main pages
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.chuck-burger.fr/sitemap.xml

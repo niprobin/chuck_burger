@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://www.chuck-burger.fr/</loc>
+    <lastmod>2025-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Page de réservation -->
+  <url>
+    <loc>https://www.chuck-burger.fr/reservations.html</loc>
+    <lastmod>2025-03-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Menu PDF -->
+  <url>
+    <loc>https://www.chuck-burger.fr/assets/menu_chuck_A4.pdf</loc>
+    <lastmod>2025-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Images importantes -->
+  <url>
+    <loc>https://www.chuck-burger.fr/assets/square/burger_close_square.JPG</loc>
+    <lastmod>2025-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+</urlset>
